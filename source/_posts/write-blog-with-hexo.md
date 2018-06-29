@@ -1,7 +1,7 @@
 ---
 title: Write blog with Hexo
 date: 2018-06-29 14:32:24
-tags: hexo write
+tags: hexo, write
 ---
 
 # Installation
@@ -82,6 +82,22 @@ Install hexo-deployer-git:
 ```
 $ npm install hexo-deployer-git --save
 ```
+Add folling line in your config file:
+```
+deploy:
+  type: git
+  repo: git@github.com:your/repo.github.io.git
+```
+Then use ``hexo deploy`` to deploy the blog.
 
 # Search
 enable search:https://www.jianshu.com/p/519b45730824
+
+# add source file to git
+```
+git init
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:your/repo.git
+git push -u origin master
+```

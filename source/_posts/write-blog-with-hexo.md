@@ -1,7 +1,9 @@
 ---
 title: Write blog with Hexo
 date: 2018-06-29 14:32:24
-tags: hexo, write
+tags:
+- hexo
+- write
 ---
 
 # Installation

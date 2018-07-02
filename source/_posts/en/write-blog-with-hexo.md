@@ -8,7 +8,7 @@ tags:
 
 I used to write with Sphinx doc. And I'd like to write a blog with some real blog system. Here I choosed Hexo. I almost use Python, so why Hexo? Because I need simply, beautiful, functional.
 
-Here is some note about how to intall and use Hexo.
+Here is some note about how to install and use Hexo.
 
 <!-- more -->
 

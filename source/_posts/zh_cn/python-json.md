@@ -1,5 +1,8 @@
 ---
-title: 与 JSON 共舞
+title: Python 与 JSON 共舞
+auto_excerpt:
+  enable: true
+  length: 150
 tags:
 - python
 - json
@@ -10,6 +13,7 @@ tags:
 在 Python 开发中，尤其是在涉及 web 开发时，不可避免会与 [JSON （JavaScript Object Notation）](http://json.org) 打交道。本文主要尝试介绍如何在 Python 中使用 JSON 。
 
 在 Python 3 的官方文档中关于 JSON 操作的函数主要有 4 个，它们分别是 `json.dump()` 、 `json.load()` 、 `json.dumps()` 和`json.loads()` 。 `json.dump()` 和 `json.dumps()` 的功能是将 Python 对象进行编码（ encoder ） ，转化为 JSON 格式；而 `json.load()` 和 `json.loads()` 则反之，对 JSON 格式对象解码（ ecoder ），转化为 Python 对象。
+<!-- more -->
 
 # json.dump() 与 json.dumps() 的区别
 
@@ -20,7 +24,7 @@ json.dump(obj, fp, *, skipkeys=False, ensure_ascii=True, check_circular=True, al
 json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, **kw)
 ```
 
-两者的定义基本相同，但是 `json.dump()` 多了一个 `fp` 参数。它们的主要区别是：`json.dumps()` 把 Python 对象序列化为一个 JSON 格式的字符串，而 `json.dump()` 则是把 Python 对象序列化为一个 JSON 格式的流，这个流可以直接写入到文件或者类似文件的对象。
+两者的定义基本相同，但是 `json.dump()` 多了一个 `fp` 参数。它们的主要区别是： `json.dumps()` 把 Python 对象序列化为一个 JSON 格式的字符串，而 `json.dump()` 则是把 Python 对象序列化为一个 JSON 格式的流，这个流可以直接写入到文件或者类似文件的对象。
 
 听起来可能有一些拗口，下面来看个例子：
 
@@ -76,8 +80,8 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 
 ### ensure_ascii 参数
 
-该参数如默认值是 `True` ，在编码时，非 ASCII 字符会被转义，例如在上文的例子中，“其他”两个
-字被编码为 `\\u5176\\u4ed6` 。如果该参数设置为 `Fasle` ，那么就不会转义。例如：
+该参数如默认值是 `True` ，在编码时，非 ASCII 字符会被转义，例如在上文的例子中，“其他”两个字被编码为 `\\u5176\\u4ed6` 。如果该参数设置为 `Fasle` ，
+那么就不会转义。例如：
 
 ``` bash
 >>> json.dumps(person, ensure_ascii=False)
@@ -86,8 +90,8 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 
 ### indent 参数
 
-该参数控制编码结果的缩进，默认值是 `None` 。默认情况下会编码结果会紧缩在一起。
-如果该参数设置为一个正整数或者 `\t` ，那么会使编码结果具有更好的可读性。例如：
+该参数控制编码结果的缩进，默认值是 `None` 。默认情况下会编码结果会紧缩在一起。如果该参数设置为一个正整数或者 `\t` ，那么会使编码结果具有更好的可读性。
+例如：
 
 ``` bash
 >>> print(json.dumps(person, ensure_ascii=False, indent=4))
@@ -120,10 +124,7 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 
 # 解码
 
-把 JSON 格式对象转换为 Python 对象称为解码，主要使用 `json.load()` 和
-`json.loads()` 函数。这两个函数基本相同，区别类似于 `json.dump()` 和
-`json.dumps()` 函数。下面主要以 `json.loads()` 函数为例，`json.load()`
-函数的用法基本类似。
+把 JSON 格式对象转换为 Python 对象称为解码，主要使用 `json.load()` 和 `json.loads()` 函数。这两个函数基本相同，区别类似于 `json.dump()` 和 `json.dumps()` 函数。下面主要以 `json.loads()` 函数为例，`json.load()` 函数的用法基本类似。
 
 `json.loads()` 用法示例：
 

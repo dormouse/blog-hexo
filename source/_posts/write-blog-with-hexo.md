@@ -121,6 +121,43 @@ local_search:
 
 Now start the server, can see the serach button.
 
+# Tags
+
+Create new page use command:
+
+``` bash
+$ hexo new page "tags"
+```
+
+Now can find a new file named ``your-blog-path/source/tags/index.md``,
+change the content to:
+
+```
+---
+title: tags
+date: 2018-07-02 10:18:58
+type: "tags"
+comments: false
+---
+```
+
+Modify the Hexo config:
+```
+menu:
+  home: /
+  archives: /archives
+  tags: /tags
+```
+
+Modify the theme config:
+```
+theme_config:
+  menu:
+    home: / || home
+    tags: /tags/ || tags
+```
+
+
 # Add source file to git
 ```
 git init

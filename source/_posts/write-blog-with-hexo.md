@@ -92,10 +92,36 @@ deploy:
 ```
 Then use ``hexo deploy`` to deploy the blog.
 
-# Search
-enable search:https://www.jianshu.com/p/519b45730824
 
-# add source file to git
+# Search
+
+## Install search plugin
+
+``` bash
+npm install hexo-generator-search  --save
+npm install hexo-generator-searchdb --save
+```
+
+## Add following line to `_config.yml` :
+
+```
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+```
+## Modify config file (`your-blog-path/themes/next/_config.yml`) of next theme, enable `local_search` :
+```
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+```
+
+Now start the server, can see the serach button.
+
+# Add source file to git
 ```
 git init
 git add .
@@ -103,3 +129,7 @@ git commit -m "first commit"
 git remote add origin git@github.com:your/repo.git
 git push -u origin master
 ```
+
+# REF
+
+* [Hexo开启站内搜索功能](https://www.jianshu.com/p/519b45730824)

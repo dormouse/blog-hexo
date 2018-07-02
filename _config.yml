@@ -187,8 +187,8 @@ theme_config:
   menu:
     home: / || home
     #about: /about/ || user
-    #tags: /tags/ || tags
-    #categories: /categories/ || th
+    # tags: /tags/ || tags
+    # categories: /categories/ || th
     archives: /archives/ || archive
     #schedule: /schedule/ || calendar
     #sitemap: /sitemap.xml || sitemap
@@ -652,7 +652,7 @@ theme_config:
   #google_site_verification:
 
   # Google Analytics
-  #google_analytics:
+  google_analytics: UA-121676812-1
 
   # Bing Webmaster tools verification setting
   # See: https://www.bing.com/webmaster/

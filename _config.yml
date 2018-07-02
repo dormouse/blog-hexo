@@ -652,7 +652,7 @@ theme_config:
   #google_site_verification:
 
   # Google Analytics
-  google_analytics: UA-121676812-1
+  google_analytics: UA-121670455-1
 
   # Bing Webmaster tools verification setting
   # See: https://www.bing.com/webmaster/
@@ -748,7 +748,7 @@ theme_config:
 
 
   # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-  baidu_push: false
+  baidu_push: True
 
   # Google Calendar
   # Share your recent schedule to others via calendar page

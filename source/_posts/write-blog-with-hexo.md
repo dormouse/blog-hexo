@@ -132,4 +132,6 @@ git push -u origin master
 
 # REF
 
-* [Hexo开启站内搜索功能](https://www.jianshu.com/p/519b45730824)
+* [Hexo docs](https://hexo.io/docs/)
+* [hexo-theme-next](https://github.com/theme-next/hexo-theme-next/)
+* [Hexo enable local search](https://www.jianshu.com/p/519b45730824)

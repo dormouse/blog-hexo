@@ -1,5 +1,5 @@
 ---
-title: Python note series 500 - datetime
+title: Python note 500 - datetime
 author: Dormouse Young
 category: Development
 date: 2017-02-13

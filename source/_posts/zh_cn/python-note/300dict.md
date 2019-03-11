@@ -11,6 +11,21 @@ tags:
  - dict
 ---
 
+# 合并两个字典
+
+Python 3.5 或者以后：
+
+```python
+z = {**x, **y}
+```
+
+Python 2 、或 3.4 以前：
+
+```python
+z = x.copy()
+z.update(y)
+```
+
 # 字典推导
 
 和列表推导类似，字典同样可以推导:

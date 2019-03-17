@@ -14,19 +14,46 @@ tags:
 
 ## 安装 Hexo
 
-Hexo 需要 Node.js ，因此首先使用以下命令安装 Node.js ：
+### Install Git
 
-``` bash
-$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-$ source .bashrc
+- Windows: Download & install [git](https://git-scm.com/download/win).
+- Mac: Install it with [Homebrew](http://mxcl.github.com/homebrew/), [MacPorts](http://www.macports.org/) or [installer](http://sourceforge.net/projects/git-osx-installer/).
+- Linux (Ubuntu, Debian): `sudo apt-get install git-core`
+- Linux (Fedora, Red Hat, CentOS): `sudo yum install git-core`
+
+### Install Node.js
+
+The best way to install Node.js is with [Node Version Manager](https://github.com/creationix/nvm).
+Thankfully the creators of nvm provide a simple script that automatically installs nvm:
+
+cURL:
+
+```bash
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+Wget:
+
+```
+$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+```
+
+Once nvm is installed, restart the terminal and run the following command to install Node.js:
+
+```bash
 $ nvm install stable
 ```
 
-然后安装 Hexo
+Alternatively, download and run [the installer](http://nodejs.org/).
 
-``` bash
+### Install Hexo
+
+Once all the requirements are installed, you can install Hexo with npm:
+
+```bash
 $ npm install -g hexo-cli
 ```
+
 
 ## 创建一个新的博客
 

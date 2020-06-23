@@ -26,7 +26,7 @@ z = x.copy()
 z.update(y)
 ```
 
-# 字典推导
+# 推导
 
 和列表推导类似，字典同样可以推导:
 
@@ -37,7 +37,7 @@ print {key: value for value, key in enumerate(teams)}
 ```
 
 <!-- more -->
-# 从字典中获取元素
+# 获取元素
 
 使用字典的 get 方法可以安全的获得字典的值，第二个参数是缺省值:
 
@@ -46,7 +46,7 @@ data = {'user': 1, 'name': 'Max', 'three': 4}
 is_admin = data.get('admin', False)
 ```
 
-# 在 Dictionary 中元素分组
+# 元素分组
 
 和上面类似，先创建 Persons:
 
@@ -113,3 +113,42 @@ class Struct:
         print s.a.cola
         print s.b
 ```
+
+
+
+# 排序
+
+## 按键排序
+
+```python
+price = {'apple': 75.00, 'orange': 65.00, 'banana': 55.00}
+for key in sorted(price):
+    print(key, '->', price[key])
+```
+
+```
+apple -> 75.0
+banana -> 55.0
+orange -> 65.0
+```
+
+## 按值排序
+
+```python
+price = {'apple': 75.00, 'orange': 65.00, 'banana': 55.00}
+
+def by_value(item):
+    return item[1]
+for k, v in sorted(price.items(), key=by_value):
+    print(k, '->', v)
+# or
+for k, v in sorted(price.items(), key=lambda x:x[1]):
+    print(k, '->', v)
+```
+
+```
+banana -> 55.0
+orange -> 65.0
+apple -> 75.0
+```
+

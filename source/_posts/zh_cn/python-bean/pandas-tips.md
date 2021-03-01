@@ -2,7 +2,7 @@
 title: Pandas Notes
 date: 2021-02-01
 modified: 2021-02-01
-permalink: python-install
+permalink: pandas-tips
 tags:
  - python
  - pandas

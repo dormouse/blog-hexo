@@ -1,9 +1,10 @@
 ---
 title: 使用 Hexo 写博客
 date: 2018-06-29 14:32:24
+modified: 2021-02-28
 tags:
-- hexo
-- write
+ - hexo
+ - write
 ---
 
 原来一直使用 Sphinx 写东西， 2018 年想开始使用一个真正的博客系统来写一些博客，于是选用了 Hexo 。我主要使用 Python 进行开发，那么为什么不选用 Pelican 之类的以 Python 为基础的博客系统呢？因为不够好看，不够方便。下面是我在安装及使用 Hexo 过程中的一些笔记。
@@ -165,6 +166,24 @@ theme_config:
     enable: true
     trigger: auto
     top_n_per_article: 1
+```
+
+# Categories
+
+创建 categroies 文件：
+
+``` bash
+$ hexo new page categories
+```
+以上命令会创建一个名为 ``your-blog-path/source/categories/index.md`` 的文件，
+把文件内容修改为：
+```
+---
+title: categories
+date: 2021-02-28 22:25:30
+type: "categories"
+comments: false
+---
 ```
 
 

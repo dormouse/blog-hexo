@@ -31,7 +31,6 @@ Anaconda3-2020.11-Windows-x86_64.exe
 
 # 安装 Anaconda
 双击 Anaconda3-2020.11-Windows-x86_64.exe 会出现安装界面，点击 Next：
-![Anaconda 安装1](image 1.png)
 ![Anaconda 安装1](https://img-blog.csdnimg.cn/20210217163952667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21vdXNlMjAxOA==,size_16,color_FFFFFF,t_70)
 点击 I Agree ：
 ![Anaconda 安装2](https://img-blog.csdnimg.cn/20210217164133751.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21vdXNlMjAxOA==,size_16,color_FFFFFF,t_70)

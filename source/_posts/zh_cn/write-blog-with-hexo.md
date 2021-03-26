@@ -123,7 +123,7 @@ next theme 已经移到[新的地址](https://github.com/theme-next/hexo-theme-n
 
 ``` bash
 $ cd your-hexo-path
-$ git clone https://github.com/theme-next/hexo-theme-next themes/next
+$ git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
 在配置文件中设置 theme 的名称：

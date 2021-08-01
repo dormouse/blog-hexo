@@ -2,7 +2,6 @@
 title: 【Python茴香豆系列】之 PANDAS 获取 DataFrame 的行数
 date: 2021-02-03
 modified: 2021-02-03
-permalink: python-bean-count-dataframe-row
 tags:
  - python
  - pandas

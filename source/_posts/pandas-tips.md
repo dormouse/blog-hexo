@@ -2,7 +2,6 @@
 title: Pandas Notes
 date: 2021-02-01
 modified: 2021-02-01
-permalink: pandas-tips
 tags:
  - python
  - pandas

@@ -2,7 +2,6 @@
 title: Python note 900 - other
 date: 2017-02-13
 modified: 2017-02-13
-permalink: python-note-900-other
 tags:
  - python
  - note

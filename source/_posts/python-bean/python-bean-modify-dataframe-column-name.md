@@ -2,7 +2,6 @@
 title: 【Python茴香豆系列】之 PANDAS 修改 DataFrame 列名
 date: 2021-01-29
 modified: 2021-01-29
-permalink: python-bean-modify-dataframe-column-name
 tags:
  - python
  - pandas

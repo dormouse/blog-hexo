@@ -2,7 +2,6 @@
 title: 【Python茴香豆系列】之 PANDAS 如何遍历 DataFrame 的所有行
 date: 2021-02-05
 modified: 2021-02-05
-permalink: python-bean-iter-dataframe-row
 tags:
  - python
  - pandas

@@ -4,7 +4,6 @@ author: Dormouse Young
 category: Development
 date: 2017-02-13
 modified: 2019-03-17
-permalink: python-note-600-functional-programming
 tags:
  - python
  - note

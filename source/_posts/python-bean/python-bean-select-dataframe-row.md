@@ -2,7 +2,6 @@
 title: 【Python茴香豆系列】之 PANDAS 如何根据列的值来选取 DataFrame 的行
 date: 2021-03-12
 modified: 2021-03-12
-permalink: python-bean-select-dataframe-row
 tags:
  - python
  - pandas

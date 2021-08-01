@@ -4,7 +4,6 @@ author: Dormouse Young
 category: Development
 date: 2017-02-13
 modified: 2017-02-13
-permalink: python-note-200-list
 summary: Python note series 200 - list
 tags:
  - python

@@ -2,7 +2,6 @@
 title: 新手安装 Python 环境（详细图解 Anaconda 安装）
 date: 2021-02-17
 modified: 2021-02-17
-permalink: python-install
 tags:
  - python
  - install

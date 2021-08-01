@@ -2,7 +2,6 @@
 title: 【Python茴香豆系列】之 拍扁列表
 date: 2021-02-01
 modified: 2021-02-01
-permalink: python-bean-flatten-list
 tags:
  - python
  - list

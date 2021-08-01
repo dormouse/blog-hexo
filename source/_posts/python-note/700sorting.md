@@ -2,7 +2,6 @@
 title: Python Note 700 - Sorting
 date: 2017-02-13
 modified: 2017-02-13
-permalink: python-note-700-sorting
 tags:
  - python
  - note

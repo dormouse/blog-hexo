@@ -2,7 +2,6 @@
 title: 【Python茴香豆系列】之 PANDAS 变更列的类型
 date: 2021-03-26
 modified: 2021-03-26
-permalink: python-bean-pandas-change-column-type
 tags:
  - python
  - pandas

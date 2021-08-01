@@ -2,7 +2,6 @@
 title: Python note 800 - logger
 date: 2017-02-13
 modified: 2017-02-13
-permalink: python-note-800-logger
 tags:
  - python
  - note

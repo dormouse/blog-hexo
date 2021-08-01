@@ -2,7 +2,6 @@
 title: Python Note 100 - File
 date: 2017-02-13
 modified: 2017-02-13
-permalink: python-note-100-file
 tags:
  - python
  - note

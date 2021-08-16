@@ -107,7 +107,7 @@ deploy:
   repo: git@github.com:dormouse/dormouse.github.io.git
 
 search:
-  path: search.xml
+  path: search.json
   field: post
   content: true
   format: html

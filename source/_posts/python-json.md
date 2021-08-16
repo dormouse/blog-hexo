@@ -1,21 +1,18 @@
 ---
 title: Python 与 JSON 共舞
-auto_excerpt:
-  enable: true
-  length: 150
 tags:
-- python
-- json
+  - python
+  - json
 ---
 
-# 简介
+## 简介
 
 在 Python 开发中，尤其是在涉及 web 开发时，不可避免会与 [JSON （JavaScript Object Notation）](http://json.org) 打交道。本文主要尝试介绍如何在 Python 中使用 JSON 。
 
-在 Python 3 的官方文档中关于 JSON 操作的函数主要有 4 个，它们分别是 `json.dump()` 、 `json.load()` 、 `json.dumps()` 和`json.loads()` 。 `json.dump()` 和 `json.dumps()` 的功能是将 Python 对象进行编码（ encoder ） ，转化为 JSON 格式；而 `json.load()` 和 `json.loads()` 则反之，对 JSON 格式对象解码（ ecoder ），转化为 Python 对象。
+在 Python 3 的官方文档中关于 JSON 操作的函数主要有 4 个，它们分别是 `json.dump()` 、 `json.load()` 、 `json.dumps()` 和`json.loads()` 。 `json.dump()` 和 `json.dumps()` 的功能是将 Python 对象进行编码（ encoder ） ，转化为 JSON 格式；而 `json.load()` 和 `json.loads()` 则反之，对 JSON 格式对象解码（ decoder ），转化为 Python 对象。
 <!-- more -->
 
-# json.dump() 与 json.dumps() 的区别
+## json.dump() 与 json.dumps() 的区别
 
 `json.dump()` 与 `json.dumps()` 的作用都是把 Python 对象序列化为 JSON 格式，不同之处在哪里呢？先来看一下两者的定义：
 
@@ -49,7 +46,7 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 
 `json.load()` 与 `json.loads()` 的区别与之类似。
 
-# 编码
+## 编码
 
 把 Python 对象序列化为 JSON 格式对象称为编码，主要使用 `json.dump()` 和 `json.dumps()` 函数。根据前文所述，这两个函数基本相同，下面主要以 `json.dumps()` 函数为例，`json.dump()` 函数的用法基本类似。
 
@@ -74,11 +71,11 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 | False                                  | false  |
 | None                                   | null   |
 
-## 常用参数
+### 常用参数
 
 `json.dumps()` 和  `json.dump()` 可以使用许多参数，下面介绍几个常用的参数：
 
-### ensure_ascii 参数
+#### ensure_ascii 参数
 
 该参数如默认值是 `True` ，在编码时，非 ASCII 字符会被转义，例如在上文的例子中，“其他”两个字被编码为 `\\u5176\\u4ed6` 。如果该参数设置为 `Fasle` ，
 那么就不会转义。例如：
@@ -88,7 +85,7 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 '{"name": "dormouse", "age": 40, "blog": ["blog1", "其他"]}'
 ```
 
-### indent 参数
+#### indent 参数
 
 该参数控制编码结果的缩进，默认值是 `None` 。默认情况下会编码结果会紧缩在一起。如果该参数设置为一个正整数或者 `\t` ，那么会使编码结果具有更好的可读性。
 例如：
@@ -104,7 +101,7 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
     ]
 }
 ```
-### sort_keys 参数
+#### sort_keys 参数
 
 该参数控制编码结果是否按键值排序，默认值是 `False` 。如果该参数设置为 `Ture` ，那么编码结果的字典的键值会进行排序。示例：
 
@@ -122,7 +119,7 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 
 更多参数请参阅：[Python 3 的官方文档][Python 3 的官方文档]
 
-# 解码
+## 解码
 
 把 JSON 格式对象转换为 Python 对象称为解码，主要使用 `json.load()` 和 `json.loads()` 函数。这两个函数基本相同，区别类似于 `json.dump()` 和 `json.dumps()` 函数。下面主要以 `json.loads()` 函数为例，`json.load()` 函数的用法基本类似。
 
@@ -146,7 +143,7 @@ json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow
 | false         | False  |
 | null          | None   |
 
-# 自定义类型处理
+## 自定义类型处理
 
 有时候，我们需要处理一些自定义的类型，例如有如下这个类：
 
@@ -182,7 +179,7 @@ TypeError: Object of type 'Point' is not JSON serializable
 
 产生异常的原因是 JSON 默认的方法无法对这种 Python 对象进行编码。那么如何解决这个问题呢？主要有两种方法：
 
-## 使用函数
+### 使用函数
 
 ``` python
 def my_default(o):
@@ -244,7 +241,7 @@ print(decode_obj)
 
 
 
-# 参考资料
+## 参考资料
 
 1. [Python 3 的官方文档][Python 3 的官方文档]
 
